@@ -17,9 +17,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSLog(@"Application is successfully started!");
     return YES;
 }
 
+- (void)applicationWillResignActive:(UIApplication *)application {
+    NSLog(@"Application now is inactive!");
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    NSLog(@"Appilcation now is active!");
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    NSLog(@"Application became background!");
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    NSLog(@"Application became foreground!");
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    NSLog(@"Application has been terminated!");
+}
 
 #pragma mark - UISceneSession lifecycle
 
